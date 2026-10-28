@@ -1,0 +1,35 @@
+# Dependencies for AI-Powered Blind Navigation Assistant
+# For local dev: pip install -r requirements.txt
+# For Render: deployment files included (render.yaml/Procfile)
+
+# ============================== CORE ======================================
+# YOLO detection framework
+ultralytics>=8.3.0
+
+# Webcam capture and preview window
+opencv-python-headless>=4.9.0.80
+
+# Numerical arrays
+numpy>=1.26.0
+
+# PyTorch backend for YOLO (CPU build sufficient; GPU optional)
+torch>=2.2.0
+
+# Faster CPU inference for exported ONNX models
+onnxruntime>=1.17.0
+
+# --- Web dashboard ---
+# REST API + WebSocket streaming server
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9
+
+# Real CPU usage metrics for the web system monitor
+psutil>=5.9.0
+
+# ============================== OPTIONAL ==================================
+# --- Family member recognition (optional) ---
+# Embedding-based ArcFace face recognition
+insightface>=0.7.3
+scipy>=1.10
+scikit-image>=0.21

@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large model weights (download separately or use Git LFS)
+models/
+*.pt
+*.onnx
+*.bin
+*.engine
+*.trt
+*.zip
+
+# Family data (contains photos/embeddings - keep private)
+family_data/
+sos_log.txt
+sos_contacts.json
+
+# Local program files
+pylibs/
+*.log
+
+# OneDrive artifacts
+~$*
+.ffs_db
+.SyncArchive
+.SyncID
+.SyncIgnore

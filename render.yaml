@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: blindnavigator
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: CAMERA_INDEX
+        value: "0"
+      - key: MODELS_DIR
+        value: "./models"
+      - key: FAMILY_RECOGNITION_ENABLED
+        value: "False"
+      - key: NAVIGATION_MODEL_ENABLED
+        value: "False"
+      - key: CAMERA_SET_RESOLUTION
+        value: "False"
+      - key: LOG_LEVEL
+        value: "info"
